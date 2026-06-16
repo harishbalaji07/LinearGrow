@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LinearGrow Pharmaceuticals Pvt. Ltd.</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ── FLOATING BUTTONS ── -->
+<div class="float-contact">
+  <div class="float-btn-wrap">
+    <span class="float-label">Contact Us</span>
+    <a href="#contact" class="float-btn float-contact-btn">✉</a>
+  </div>
+  <div class="float-btn-wrap">
+    <span class="float-label">WhatsApp Us</span>
+    <a href="https://wa.me/918095203936" target="_blank" class="float-btn float-wa-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<!-- ── NAVIGATION ── -->
+<nav>
+  <a class="nav-logo" href="#home">
+    <img src="Logo.jpg" alt="LinearGrow Pharmaceuticals Logo"/>
+    <div class="nav-logo-text">
+      <span class="name">LinearGrow Pharmaceuticals</span>
+      <span class="tagline">Converting Science to Service</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#lab">Our Lab</a></li>
+    <li><a href="#customers">Clients</a></li>
+    <li><a href="#regulatory">Regulatory</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Partner With Us</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#services" onclick="toggleMenu()">Services</a>
+  <a href="#expertise" onclick="toggleMenu()">Expertise</a>
+  <a href="#lab" onclick="toggleMenu()">Our Lab</a>
+  <a href="#customers" onclick="toggleMenu()">Clients</a>
+  <a href="#regulatory" onclick="toggleMenu()">Regulatory</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+</div>
+
+<!-- ── HERO ── -->
+<section id="home">
+  <div class="hero-video-wrap">
+    <video autoplay muted loop playsinline>
+      <source src="Video.mp4" type="video/mp4"/>
+    </video>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow"><span class="dot"></span> Contract Pharma Services · Bangalore, India</div>
+    <h1>Chemistry Solutions.<br/><em>Global Compliance.</em></h1>
+    <p class="hero-sub">LinearGrow Pharmaceuticals provides end-to-end contract pharma services — from impurity synthesis and analytical R&D to full-spectrum regulatory intelligence across US, EU, UK, Canada, and ROW markets.</p>
+    <div class="hero-btns">
+      <a href="#services" class="btn-primary">Explore Our Services</a>
+      <a href="#contact" class="btn-outline">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">20+</div><div class="label">Years SME Experience</div></div>
+      <div class="hero-stat"><div class="num">6</div><div class="label">Global Markets</div></div>
+      <div class="hero-stat"><div class="num">E2E</div><div class="label">Project Handling</div></div>
+      <div class="hero-stat"><div class="num">100%</div><div class="label">Compliance Focus</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ANIMATED STATS BAR ── -->
+<div class="stats-bar">
+  <div class="stat-item"><div class="count" data-target="20" data-suffix="+">0</div><div class="slabel">Years of Expertise</div></div>
+  <div class="stat-item"><div class="count" data-target="6" data-suffix="">0</div><div class="slabel">Global Markets</div></div>
+  <div class="stat-item"><div class="count" data-target="100" data-suffix="%">0</div><div class="slabel">Compliance Rate</div></div>
+  <div class="stat-item"><div class="count" data-target="5" data-suffix="+">0</div><div class="slabel">Regulatory Agencies</div></div>
+</div>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img-wrap fade-left">
+      <img src="pharma_team_research_2.jpg" alt="LinearGrow Research Team"/>
+      <div class="about-img-badge">
+        <div class="n">2025</div>
+        <div class="l">Founded in Bangalore</div>
+      </div>
+    </div>
+    <div class="fade-right">
+      <div class="section-eyebrow">Who We Are</div>
+      <h2>A Trusted Co-Partner in Pharma Innovation</h2>
+      <p class="section-desc">LinearGrow Pharmaceuticals Pvt. Ltd. is a forward-driven contract pharma company built on scientific integrity, transparency, and genuine ownership of every project we take on.</p>
+      <div class="about-pillars">
+        <div class="pillar">
+          <div class="pillar-icon"><img width="35" height="35" src="https://img.icons8.com/bubbles/100/microscope.png" alt="microscope"/></div>
+          <div><h4>Scientific Integrity</h4><p>Every project grounded in rigorous science and documented compliance.</p></div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"><img width="25" height="25" src="https://img.icons8.com/stickers/100/earth-care.png" alt="earth-care"/></div>
+          <div><h4>Global Compliance</h4><p>USFDA, MHRA, TGA, ANVISA — we navigate every major regulatory landscape.</p></div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"><img width="40" height="40" src="https://img.icons8.com/bubbles/100/handshake.png" alt="handshake"/></div>
+          <div><h4>End-to-End Partnership</h4><p>We take full ownership from concept through commercialization alongside you.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY CHOOSE US ── -->
+<section id="why">
+  <div class="fade-in">
+    <div class="section-eyebrow">Why LinearGrow</div>
+    <h2>What Sets Us Apart</h2>
+    <p class="section-desc">We don't just deliver reports — we take scientific ownership of your project from day one.</p>
+  </div>
+  <div class="why-grid fade-in">
+    <div class="why-card">
+      <span class="why-icon"><img width="40" height="40" src="https://img.icons8.com/3d-fluent/100/target-10.png" alt="target"/></span>
+      <h3>20+ Years SME Expertise</h3>
+      <p>Our subject matter expert brings over two decades of hands-on Analytical R&D experience across ophthalmic and injectable dosage forms.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon"><img width="40" height="40" src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/external-global-freelancer-xnimrodx-lineal-color-xnimrodx-2.png" alt="global"/></span>
+      <h3>Global Regulatory Reach</h3>
+      <p>Deep experience responding to USFDA, MHRA, Health Canada, TGA, and ANVISA — across US, UK, EU, Canada, Australia, Brazil and ROW.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon"><img width="40" height="40" src="https://img.icons8.com/stickers/100/lab-items.png" alt="lab"/></span>
+      <h3>Nitrosamine Specialists</h3>
+      <p>One of the few contract partners offering a complete nitrosamine package — from synthesis to risk dossiers — under one roof.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon"><img width="40" height="40" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-partnership-recruitment-agency-flaticons-lineal-color-flat-icons.png" alt="partnership"/></span>
+      <h3>True Co-Partnership</h3>
+      <p>We work as an embedded extension of your team — transparent, accountable, and committed to your timelines and compliance goals.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES FLIP CARDS ── -->
+<section id="services">
+  <div class="fade-in">
+    <div class="section-eyebrow">What We Do</div>
+    <h2>Our Core Services</h2>
+    <p class="section-desc">Hover each card to explore what we deliver. From custom synthesis to regulatory submissions, LinearGrow handles the complexity.</p>
+  </div>
+  <div class="services-grid">
+    <div class="flip-card fade-in"><div class="flip-card-inner">
+      <div class="flip-front"><img src="chemistry_flask_lab_1.jpg" alt="Organic Synthesis" class="flip-front-img"/><h3>Organic Synthesis</h3><p>Custom, impurity & intermediate synthesis with API process development.</p></div>
+      <div class="flip-back"><h3>Organic Synthesis</h3><ul><li>Impurity synthesis from API & intermediates</li><li>Custom synthesis to specification</li><li>API process development</li><li>Process modification support</li></ul><p class="flip-hint">Hover to flip back</p></div>
+    </div></div>
+
+    <div class="flip-card fade-in"><div class="flip-card-inner">
+      <div class="flip-front"><img src="scientist_microscope_analysis_1.jpg" alt="Analytical" class="flip-front-img"/><h3>Analytical Solutions</h3><p>Impurity isolation, method development strategy, and full project management.</p></div>
+      <div class="flip-back"><h3>Analytical Solutions</h3><ul><li>Impurity isolation (outsourced)</li><li>Analytical consultation & development</li><li>Method development & validation</li><li>Full analytical project handling</li></ul><p class="flip-hint">Hover to flip back</p></div>
+    </div></div>
+
+    <div class="flip-card fade-in"><div class="flip-card-inner">
+      <div class="flip-front"><img src="Nitrosamine_chemical_research_molecules_1.jpg" alt="Nitrosamine" class="flip-front-img"/><h3>Nitrosamine Solutions</h3><p>Complete control strategy, risk assessment, impurity supply & scavenger evaluation.</p></div>
+      <div class="flip-back"><h3>Nitrosamine Solutions</h3><ul><li>Nitrosamine control strategy</li><li>Risk assessment reports (ICH M7)</li><li>Nitrosamine impurity supply</li><li>Scavenger evaluation studies</li></ul><p class="flip-hint">Hover to flip back</p></div>
+    </div></div>
+
+    <div class="flip-card fade-in"><div class="flip-card-inner">
+      <div class="flip-front"><img src="Reverse Engineering.jpg" alt="Reverse Engineering" class="flip-front-img"/><h3>Reverse Engineering of RLD</h3><p>Quantifying excipients in Reference Listed Drugs and regulatory submissions.</p></div>
+      <div class="flip-back"><h3>RLD Reverse Engineering</h3><ul><li>Excipient quantification in RLD</li><li>Control correspondence compilation</li><li>Injectable & Ophthalmic specialty</li><li>Regulatory agency submissions</li></ul><p class="flip-hint">Hover to flip back</p></div>
+    </div></div>
+
+    <div class="flip-card fade-in"><div class="flip-card-inner">
+      <div class="flip-front"><img src="documents_compliance_global_2.jpg" alt="Regulatory" class="flip-front-img"/><h3>Regulatory Intelligence</h3><p>End-to-end regulatory services from strategy to eCTD submission.</p></div>
+      <div class="flip-back"><h3>Regulatory Intelligence</h3><ul><li>Regulatory strategy development</li><li>Dossier preparation (US/EU/UK/CA)</li><li>eCTD compilation & submission</li><li>Lifecycle management</li></ul><p class="flip-hint">Hover to flip back</p></div>
+    </div></div>
+
+    <div class="flip-card fade-in"><div class="flip-card-inner">
+      <div class="flip-front"><img src="Collaboration.jpg" alt="R&D" class="flip-front-img"/><h3>R&D Collaboration</h3><p>From concept to commercialization with flexible engagement models.</p></div>
+      <div class="flip-back"><h3>R&D Collaboration</h3><ul><li>Concept to commercialization</li><li>Flexible engagement models</li><li>Co-partnership approach</li><li>Dedicated project ownership</li></ul><p class="flip-hint">Hover to flip back</p></div>
+    </div></div>
+  </div>
+</section>
+
+<!-- ── EXPERTISE ── -->
+<section id="expertise">
+  <div class="fade-in">
+    <div class="section-eyebrow">Deep Knowledge</div>
+    <h2>Our Technical Expertise</h2>
+    <p class="section-desc">Our subject matter expert brings 20+ years of hands-on Analytical R&D experience across injectable, ophthalmic, oral, and topical dosage forms.</p>
+  </div>
+  <div class="expertise-tabs fade-in">
+    <button class="tab-btn active" onclick="showTab('analytical',this)">Analytical R&D</button>
+    <button class="tab-btn" onclick="showTab('nitrosamine',this)">Nitrosamines</button>
+    <button class="tab-btn" onclick="showTab('agencies',this)">Regulatory Agencies</button>
+  </div>
+  <div id="tab-analytical" class="tab-panel active fade-in">
+    <ul class="expertise-list">
+      <li>Reverse engineering of Reference Listed Drugs (RLDs)</li>
+      <li>Control correspondence for Injectable and Ophthalmic dosage forms</li>
+      <li>Impurity isolation and characterization</li>
+      <li>Analytical method development and validation support</li>
+      <li>Stability studies and trend mapping</li>
+      <li>Analytical troubleshooting and root cause identification</li>
+    </ul>
+    <div class="expertise-badge">
+      <div class="badge-stat"><div class="n">20+</div><div class="l">Years Analytical R&D Experience</div></div>
+      <div class="badge-stat"><div class="n" style="font-size:26px;">Ophthalmic & Injectable</div><div class="l">Specialty Dosage Forms</div></div>
+    </div>
+  </div>
+  <div id="tab-nitrosamine" class="tab-panel fade-in">
+    <ul class="expertise-list">
+      <li>Nitrosamine control strategy for finished products — scientific approach</li>
+      <li>Nitrosamine impurity supply and reference standards</li>
+      <li>Nitrosamine risk assessment reports (ICH M7 aligned)</li>
+      <li>Scavenger evaluation studies</li>
+      <li>Nitrosamine synthesis at our dedicated Bangalore lab</li>
+    </ul>
+    <div class="expertise-badge">
+      <p style="font-size:14px;color:rgba(255,255,255,0.7);line-height:1.8;">Nitrosamine impurities are a critical focus area under USFDA and ICH M7 guidelines. LinearGrow provides the full package — from synthesis of reference standards to complete risk dossiers.</p>
+    </div>
+  </div>
+  <div id="tab-agencies" class="tab-panel fade-in">
+    <ul class="expertise-list">
+      <li>USFDA — US Food and Drug Administration</li>
+      <li>MHRA — UK Medicines and Healthcare products Regulatory Agency</li>
+      <li>Health Canada (Clarifax)</li>
+      <li>TGA — Australia's Therapeutic Goods Administration</li>
+      <li>ANVISA — Brazil's National Health Surveillance Agency</li>
+      <li>ROW (Rest of World) markets</li>
+    </ul>
+    <div class="expertise-badge">
+      <div style="font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:12px;letter-spacing:1px;text-transform:uppercase;font-weight:600;">Markets We Serve</div>
+      <div class="markets-grid">
+        <span class="market-chip">🇺🇸 US</span><span class="market-chip">🇬🇧 UK</span><span class="market-chip">🇪🇺 EU</span>
+        <span class="market-chip">🇨🇦 Canada</span><span class="market-chip">🇦🇺 Australia</span><span class="market-chip">🇧🇷 Brazil</span><span class="market-chip">🌍 ROW</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── OUR LAB ── -->
+<section id="lab">
+  <div class="lab-grid">
+    <div class="fade-left">
+      <div class="section-eyebrow">Infrastructure</div>
+      <h2>Our Dedicated Synthetic Lab</h2>
+      <p class="section-desc">Based in Bangalore, our organic synthesis facility is equipped for impurity, nitrosamine, and intermediate synthesis with full traceability.</p>
+      <div class="equipment-grid">
+        <div class="eq-item"><span class="eq-dot"></span>Fume Hoods (3 nos)</div>
+        <div class="eq-item"><span class="eq-dot"></span>Rota Evaporators</div>
+        <div class="eq-item"><span class="eq-dot"></span>Weighing Balances</div>
+        <div class="eq-item"><span class="eq-dot"></span>Magnetic Stirrers</div>
+        <div class="eq-item"><span class="eq-dot"></span>Mechanical Stirrers</div>
+        <div class="eq-item"><span class="eq-dot"></span>Heating Mantles</div>
+        <div class="eq-item"><span class="eq-dot"></span>pH Meter</div>
+        <div class="eq-item"><span class="eq-dot"></span>Vortex Machine</div>
+        <div class="eq-item"><span class="eq-dot"></span>Refrigerators</div>
+        <div class="eq-item"><span class="eq-dot"></span>Storage Cupboards</div>
+      </div>
+    </div>
+    <div class="fade-right" style="display:flex;flex-direction:column;gap:20px;">
+      <div class="lab-img-wrap"><img src="lab_equipment_fume_hood_2.jpg" alt="LinearGrow Lab Equipment"/></div>
+      <div class="lab-img-wrap" style="height:200px;"><img src="pharmaceutical_laboratory_1.jpg" alt="Pharmaceutical Laboratory"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── OUR CLIENTS ── -->
+<section id="customers">
+  <div class="fade-in">
+    <div class="section-eyebrow">Our Clients</div>
+    <h2>Who We Work With</h2>
+    <p class="section-desc">We've already delivered results for pharmaceutical manufacturers and research organizations. The next partnership could be yours.</p>
+  </div>
+  <div class="customers-grid fade-in">
+    <div class="customer-card active-client">
+      <div class="client-num">01</div>
+      <div class="client-logo-wrap">
+        <img src="client1_pharmastulln.png" alt="Pharma Stulln"/>
+      </div>
+      <h3>Pharma Stulln</h3>
+      <p>Successfully completed Reverse Engineering of Ophthalmic RLD — excipient quantification and control correspondence compiled for regulatory submission.</p>
+      <div class="client-badge">✓ Project Delivered</div>
+    </div>
+    <div class="customer-card active-client">
+      <div class="client-num">02</div>
+      <div class="client-logo-wrap">
+        <img src="client2_cjcpharma.png" alt="CJC Pharmaceuticals Pty Ltd"/>
+      </div>
+      <h3>CJC Pharmaceuticals Pty Ltd</h3>
+      <p>Completed Reverse Engineering of Ophthalmic RLD project with full analytical support and regulatory documentation delivered on time.</p>
+      <div class="client-badge">✓ Project Delivered</div>
+    </div>
+    <div class="customer-card you-card">
+      <div class="client-num">03</div>
+      <h3>It's You………</h3>
+      <p>The third slot is reserved for our next valued partner. We are actively onboarding new clients and would love to discuss how we can serve your pharma needs.</p>
+      <a href="#contact" class="you-badge">→ Let's Talk</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── REGULATORY IMAGE BANNER ── -->
+<div class="reg-img-section">
+  <div class="reg-img-left">
+    <img src="documents_compliance_global_2.jpg" alt="Regulatory Compliance"/>
+    <div class="reg-img-left-overlay"><h3>Global Regulatory<br/>Coverage</h3></div>
+  </div>
+  <div class="reg-img-right">
+    <p style="font-size:12px;color:rgba(255,255,255,0.55);margin-bottom:18px;text-transform:uppercase;letter-spacing:1.2px;font-weight:600;">Markets & Agencies</p>
+    <div class="market-flags">
+      <span class="flag-badge">🇺🇸 USFDA</span>
+      <span class="flag-badge">🇬🇧 MHRA</span>
+      <span class="flag-badge">🇪🇺 EMA</span>
+      <span class="flag-badge">🇨🇦 Health Canada</span>
+      <span class="flag-badge">🇦🇺 TGA</span>
+      <span class="flag-badge">🇧🇷 ANVISA</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── REGULATORY INTELLIGENCE ── -->
+<section id="regulatory">
+  <div class="fade-in">
+    <div class="section-eyebrow">Regulatory Affairs</div>
+    <h2>End-to-End Regulatory Intelligence</h2>
+    <p class="section-desc">From strategic planning through post-approval maintenance — we help you achieve timely approvals and maintain product integrity across global markets.</p>
+  </div>
+  <div class="reg-grid fade-in">
+    <div class="reg-card"><h4><span><img width="28" height="28" src="https://img.icons8.com/officel/80/strategy-board.png" alt="strategy"/></span> Regulatory Strategy</h4><ul><li>Global regulatory pathway development</li><li>Risk assessments & gap analysis</li><li>Global submission planning</li><li>Lifecycle management strategy</li></ul></div>
+    <div class="reg-card"><h4><span><img width="28" height="28" src="https://img.icons8.com/fluency/50/dossier-.png" alt="dossier"/></span> Dossier Preparation</h4><ul><li>US, UK, EU, CA, ROW markets</li><li>Pre-approval & post-approval dossiers</li><li>Oral, Topical, Parenteral, Ophthalmic</li><li>Integrated CMC development</li></ul></div>
+    <div class="reg-card"><h4><span><img width="28" height="28" src="https://img.icons8.com/external-avoca-kerismaker/64/external-Antena-Dish-networking-avoca-kerismaker.png" alt="eCTD"/></span> eCTD Submissions</h4><ul><li>Compilation in eCTD format (M1–M5)</li><li>Sequence validation & publishing</li><li>Global health authority submission</li><li>Post-submission tracking</li></ul></div>
+    <div class="reg-card"><h4><span><img width="28" height="28" src="https://img.icons8.com/3d-fluency/94/cloud-sync.png" alt="lifecycle"/></span> Lifecycle Management</h4><ul><li>US: PAS, CBE-30/0, Annual Reports</li><li>Canada: Level 1 Supplement & AR</li><li>EU/UK: Type II / IB / IAIN / IA</li><li>PADER submissions</li></ul></div>
+    <div class="reg-card"><h4><span><img width="28" height="28" src="https://img.icons8.com/fluency/48/price-tag--v1.png" alt="label"/></span> Label Preparation</h4><ul><li>Package inserts & container labels</li><li>Draft / Side-by-side / Final formats</li><li>SPL (Structured Product Labeling)</li><li>Global market compliance</li></ul></div>
+    <div class="reg-card"><h4><span><img width="28" height="28" src="https://img.icons8.com/ios-filled/50/call-male.png" alt="agency"/></span> Agency Interaction</h4><ul><li>Regulatory meetings support</li><li>Query management & response</li><li>License applications & renewals</li><li>NOC, Test & Import Licenses</li></ul></div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="fade-in">
+    <div class="section-eyebrow">Get In Touch</div>
+    <h2>Let's Work Together</h2>
+    <p class="section-desc" style="color:rgba(255,255,255,0.5);">Tell us about your project. We'll respond within 24 hours with a tailored proposal.</p>
+  </div>
+  <div class="contact-grid fade-in">
+    <div class="contact-form">
+      <div class="form-row">
+        <div class="form-group"><label>First Name</label><input type="text" placeholder="Ravi"/></div>
+        <div class="form-group"><label>Last Name</label><input type="text" placeholder="Sharma"/></div>
+      </div>
+      <div class="form-group"><label>Company / Organization</label><input type="text" placeholder="Your Pharma Company"/></div>
+      <div class="form-group"><label>Email</label><input type="email" placeholder="you@company.com"/></div>
+      <div class="form-group">
+        <label>Service of Interest</label>
+        <select>
+          <option value="">Select a service…</option>
+          <option>Organic / Custom Synthesis</option>
+          <option>Nitrosamine Solutions</option>
+          <option>Analytical Solutions</option>
+          <option>Reverse Engineering of RLD</option>
+          <option>Regulatory Intelligence</option>
+          <option>R&D Collaboration</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Tell us about your project</label><textarea placeholder="Brief description of your requirements, markets, timelines…"></textarea></div>
+      <button class="btn-primary">Send Enquiry →</button>
+    </div>
+    <div class="contact-info">
+      <div class="info-item">
+        <div class="info-icon"><img width="24" height="24" src="https://img.icons8.com/parakeet/48/new-post.png" alt="email"/></div>
+        <div><h4>Email Us</h4><p><a href="mailto:lineargrowpharma@gmail.com">lineargrowpharma@gmail.com</a></p></div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><img width="24" height="24" src="https://img.icons8.com/3d-fluency/94/location.png" alt="location"/></div>
+        <div><h4>Lab Location</h4><p>Bangalore, Karnataka, India</p></div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><img width="24" height="24" src="https://img.icons8.com/color/48/clock--v1.png" alt="clock"/></div>
+        <div><h4>Response Time</h4><p>Within 24 business hours</p></div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><img width="24" height="24" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="whatsapp"/></div>
+        <div><h4>WhatsApp</h4><p><a href="https://wa.me/918095203936">+91 80952 03936</a></p></div>
+      </div>
+      <div class="contact-note">
+        <p><strong>New partnership opportunity?</strong><br/>We have already completed Ophthalmic RLD reverse engineering projects and are actively onboarding new partners. Reach out to discuss how we can serve your needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo">
+    <img src="Logo.jpg" alt="LinearGrow Logo"/>
+    <div class="footer-logo-text">
+      <div class="fname">LinearGrow Pharmaceuticals Pvt. Ltd.</div>
+      <div class="ftag">Converting Science to Service · © 2025</div>
+    </div>
+  </div>
+  <p>Transparent · Compliant · Innovative</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#customers">Clients</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
